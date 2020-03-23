@@ -11,7 +11,6 @@ class BinarySearch:
         
         while(first <= last):
             middle = (first + last) // 2                                        #Use floor division as index is a whole number
-            print(first, last, middle, self.data_list[middle], key)
             if(self.data_list[middle] == key):
                 return middle
 
