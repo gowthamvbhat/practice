@@ -1,4 +1,4 @@
-# Lion Circuits
+# Practice
 
 ## Testing
 
