@@ -1,13 +1,20 @@
-# Lion Circuits ver2
+# Lion Circuits 
 
-## Testing
+## Steps to run testcases
 
-- The tests should be performed in the **protodndapp** directory
+The tests should be performed in the **protodndapp** directory
 
-#### Command to test a single app
+#### Test a single app
 
-`$python manage.py test apps.<app_name>`
+Here we run test cases of a single app.
+Command - 
+`$python manage.py test apps.APP_NAME`
 
-#### Command to test the complete project
+For example -
+$python manage.py test apps.QUOTATION
 
+#### Test the complete project
+
+Here we run test cases of the complete project.
+Command - 
 `$python manage.py test`
