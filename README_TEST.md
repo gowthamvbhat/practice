@@ -4,7 +4,7 @@
 
 The tests should be performed in the **protodndapp** directory
 
-#### Test a single app
+### Test a single app
 
 Here we run test cases of a single app.
 Command - 
@@ -13,7 +13,7 @@ Command -
 For example -
 $python manage.py test apps.QUOTATION
 
-#### Test the complete project
+### Test the complete project
 
 Here we run test cases of the complete project.
 Command - 
