@@ -1,4 +1,4 @@
-# Lion Circuits ver2
+# Practice ver 2
 
 ## Testing
 
