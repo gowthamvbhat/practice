@@ -2,3 +2,5 @@
 
 
 test_variable = 'a'
+
+test_variable_1 = 'b'
