@@ -33,8 +33,14 @@ jobs:
         run: |
           echo "Present working directory"
           pwd
-          echo "List of files"
-          ls -la
+          echo "Install tree"
+          sudo apt-get install tree
+      
+      - name: run tree one level
+        run: tree ..
+        
+      - name: run tree two level
+        run: tree ../..
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
