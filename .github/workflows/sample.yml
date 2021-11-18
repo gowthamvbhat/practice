@@ -6,9 +6,7 @@ name: Sample Workflow
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ demo_branch ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,9 +23,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Change branch
-        run: git checkout demo_branch
-        
       - name: Create a file
         run: echo "this is a text file" > test.txt
 
