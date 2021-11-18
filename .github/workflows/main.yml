@@ -78,7 +78,7 @@ jobs:
         run: echo "$GITHUB_CONTEXT"
       - name: Dump job context
         env:
-          JOB_CONTEXT: ${{ toJSON(jobs) }}
+          JOB_CONTEXT: ${{ toJSON(job) }}
         run: | 
           echo "$JOB_CONTEXT"
           echo ${{ toJSON(jobs.build.env) }}
