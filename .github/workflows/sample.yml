@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Sample Workflow
 
 # Controls when the workflow will run
 on:
@@ -24,6 +24,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+
+      - name: Change branch
+        run: git checkout demo_branch
+        
+      - name: Create a file
+        run: echo "this is a text file" > test.txt
+
+      - name: Print git status
+        run: git status
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
