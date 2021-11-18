@@ -29,6 +29,12 @@ jobs:
       - name: Print git status
         run: git status
       
+      - name: Create deployment package
+        run: git archive -v -o ../deployment.zip --format=zip HEAD
+      
+      - name: Print file size
+        run: ls -l ../deployment.zip
+      
       - name: commands
         run: |
           echo "Present working directory"
