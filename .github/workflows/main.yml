@@ -84,10 +84,12 @@ jobs:
       
       - name: Get version and description
         id: git_data
+        env:
+          COMMIT_MESSAGE: ${{ github.events.head_commit.message }}
         run: |
           export HEAD_COMMIT_HASH=$(git log -1 --pretty=%h)
           echo "::set-output name=version::dev-$HEAD_COMMIT_HASH"
-          echo "::set-output name=description::${{ github.events.head_commit.message }}"
+          echo "::set-output name=description::"${{ github.event.head_commit.message }}
 
       - name: Print version and description
         run: |
