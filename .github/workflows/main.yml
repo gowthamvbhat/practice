@@ -28,6 +28,13 @@ jobs:
 
       - name: Print git status
         run: git status
+      
+      - name: commands
+        run: |
+          echo "Present working directory"
+          pwd
+          echo "List of files"
+          ls -la
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
