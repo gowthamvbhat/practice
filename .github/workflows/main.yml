@@ -82,6 +82,18 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       
+      - name: Get version and description
+        id: git_data
+        run: |
+          export HEAD_COMMIT_HASH=$(git log -1 --pretty=%h)
+          echo "::set-output name=version::dev-$HEAD_COMMIT_HASH"
+          echo "::set-output name=description::${{ github.head_commit.message }}"
+
+      - name: Print version and description
+        run: |
+          echo ${{ steps.git_data.outputs.version }}
+          echo ${{ steps.git_data.outputs.description }}
+      
       # Dump ------------------------------------------------
       
       - name: Dump GitHub context
