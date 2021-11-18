@@ -81,7 +81,7 @@ jobs:
           JOB_CONTEXT: ${{ toJSON(job) }}
         run: | 
           echo "$JOB_CONTEXT"
-          echo ${{ toJSON(jobs.build.env) }}
+          echo ${{ toJSON(job.build.env) }}
       - name: Dump steps context
         env:
           ENV_1: temp
