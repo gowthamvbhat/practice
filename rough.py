@@ -5,4 +5,6 @@ test_variable = 'a'
 
 test_variable_1 = 'b'
 
+change_for_branch_one = 'one'
+
 test_variable_5 = 'c'
