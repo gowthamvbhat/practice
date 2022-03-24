@@ -12,3 +12,5 @@ test_variable_5 = 'c'
 same_change_multiple_branch = 'd'
 
 same_change_branch = '1'
+
+same_change_branch_2 = '2'
