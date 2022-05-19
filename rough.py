@@ -22,3 +22,5 @@ release_one = 'af'
 release_two = 'adf'
 
 release_three = 'asdf'
+
+separate_release_2 = 'separate_release_2'
