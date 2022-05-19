@@ -12,3 +12,5 @@ test_variable_5 = 'c'
 same_change_multiple_branch = 'd'
 
 test_branch_protection = 'a'
+
+something1 = 'asdf'
