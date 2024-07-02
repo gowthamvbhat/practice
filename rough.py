@@ -7,6 +7,8 @@ test_variable_1 = 'b'
 
 change_for_branch_one = 'one'
 
+mid_one = 1
+
 test_variable_5 = 'c'
 
 same_change_multiple_branch = 'd'
