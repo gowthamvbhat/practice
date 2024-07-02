@@ -9,6 +9,8 @@ change_for_branch_one = 'one'
 
 mid_one = 1
 
+mid_two = 2
+
 test_variable_5 = 'c'
 
 same_change_multiple_branch = 'd'
