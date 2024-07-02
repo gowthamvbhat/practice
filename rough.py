@@ -22,3 +22,9 @@ release_one = 'af'
 release_two = 'adf'
 
 release_three = 'asdf'
+
+test_one = 1
+
+test_two = 2
+
+test_three = 3
